@@ -18,7 +18,8 @@ This web application is also running use the default development server provided
 1. Landing Page : http://159.203.92.24:8000/instacart_shopper/
 2. Funnel Report API : http://159.203.92.24:8000/instacart_shopper/funnel.json?start_date=START&end_date=END
 
-    * This generates funnel report between the last monday <= start_date and next sunday >= end_date.
+    * This generates funnel report between the last monday <= start_date and next sunday >= end_date. The results are sorted by 
+    chronological buckets to help easily visualize the correct date buckets.
     
     * Example : http://159.203.92.24:8000/instacart_shopper/funnel.json?start_date=2014-01-01&end_date=2014-12-31
 
