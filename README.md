@@ -1,6 +1,9 @@
 ## Instacart-Shopper
 This challenge is broken into two parts. The first part is implementing the public-facing site that a prospective Instacart Shopper would see when hearing about the opportunities that Instacart offers. The second is writing analytics to monitor the progress of shoppers through the hiring funnel.
 
+## Application
+The application has been hosted here : http://159.203.92.24:8000/instacart_shopper/
+
 ## Technologies
 1. Python
 2. Django
