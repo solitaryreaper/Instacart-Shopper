@@ -46,7 +46,7 @@ The following ideas can help in scaling the analytics component for faster respo
 
   2. **Date-based Indexing and database partitioning**
     We also want to optimize the time taken for running the date-range queries. This can be done by creating index on the date 
-    column. Also, date-based paritioning of the database might help speed up the query , depending on the nature of executed        queries.
+    column. The range-based nature of the funnel API queries would fit very well against the BTree indices. Also, date-based paritioning of the database might help speed up the query , depending on the nature of executed        queries.
 
 ## Screenshots
 Screenshots for the various web application states and API's have been hosted here : https://github.com/solitaryreaper/Instacart-Shopper/tree/master/screenshots
