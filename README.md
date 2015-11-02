@@ -43,7 +43,7 @@ This web application is also running use the default development server provided
  
 4. **Django Admin API** : http://159.203.92.24:8000/admin/instacart_shopper/applicant/
     * Username : admin, Password : admin
-    * 
+
 5.  **DB Schema** : https://github.com/solitaryreaper/Instacart-Shopper/tree/master/shopper/instacart_shopper/migrations
     * Auto-generated using Django ORM database migrations.
 
