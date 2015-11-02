@@ -37,7 +37,7 @@ This web application is also running use the default development server provided
     * Username : admin, Password : admin
     * 
 5.  **DB Schema** : https://github.com/solitaryreaper/Instacart-Shopper/tree/master/shopper/instacart_shopper/migrations
-    * Auto-generated using Django database migrations.
+    * Auto-generated using Django ORM database migrations.
 
 ## Scalability
 The following ideas can help in scaling the analytics component for faster response time, even when the data size explodes.
