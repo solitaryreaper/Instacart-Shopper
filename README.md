@@ -27,9 +27,11 @@ This web application is also running use the default development server provided
     * Returns proper API error messages if the input is incorrect. For example, if date is incorrectly formatted or START date        is greater than END date. 
     * Example : http://159.203.92.24:8000/instacart_shopper/funnel.json?start_date=2014-01-01&end_date=2014-12-31
 
-3. Data bootstrap API : http://159.203.92.24:8000/instacart_shopper/bootstrap/COUNT/
+3. **Data bootstrap API** : http://159.203.92.24:8000/instacart_shopper/bootstrap/COUNT/
     * This API populates the database with COUNT random dummy shopper applicants.
     * Example : http://159.203.92.24:8000/instacart_shopper/bootstrap/10000/
+    * **SETUP** If we want to further stress test the funnel API, run the bootstrap API with a very big COUNT value. It has 
+      already been bootstrapped with 20K entries at this point.
  
 4. Django Admin API : http://159.203.92.24:8000/admin/instacart_shopper/applicant/
     * Username : admin, Password : admin
