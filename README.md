@@ -39,16 +39,24 @@ This web application is also running use the default development server provided
 5.  **DB Schema** : https://github.com/solitaryreaper/Instacart-Shopper/tree/master/shopper/instacart_shopper/migrations
     * Auto-generated using Django ORM database migrations.
 
-## Scalability
+## Scalability/Design Tradeoffs
 The following ideas can help in scaling the analytics component for faster response time, even when the data size explodes.
   1. **Caching**
     Since the funnel API is an expensive grouping API, we can cache the results of this API for faster response times. Django 
-    has support for many caching mechanisms like *Memcached* etc. for the same. Depending on the business requirements of the 
-    API and the staleness threshold, we can tune the cache eviction policy.
+    has support for many caching mechanisms like *Memcached*, *local memory caching* etc. for the same. Depending on the            business requirements of the API and the staleness threshold, we can tune the cache eviction policy.
+  
+    In the current implementation, cache eviction has been set to 5 minutes and caching policy uses local memory for caching. 
+
+    * If business is fine with seeing slightly stale grouped date for shoppers, then we can increase the cache eviction interval
+    to get more cache hits and hence better API response times. But, if the requirement is to get most recent data, then this 
+    interval has to be decreased further, leading to more cache misses.
+    * If the number of entries to be cached is very high, then local-memory caching used for development purpose might not 
+    suffice because a lot of cache eviction might happen because of LRU policy. In such a case, using a distributed cache like
+    *Memcached* migth be a better fit.
 
   2. **Date-based Indexing and database partitioning**
     We also want to optimize the time taken for running the date-range queries. This can be done by creating index on the date 
-    column. The range-based nature of the funnel API queries would fit very well against the BTree indices. Also, date-based paritioning of the database might help speed up the query , depending on the nature of executed        queries.
+    column. The range-based nature of the funnel API queries would fit very well against the BTree indices. Also, date-based        paritioning of the database might help speed up the query , depending on the nature of executed queries.
 
 ## Screenshots
 Screenshots for the various web application states and API's have been hosted here : https://github.com/solitaryreaper/Instacart-Shopper/tree/master/screenshots
