@@ -1,0 +1,22 @@
+{% extends "instacart_shopper/base.html" %}
+{% block content %}
+    
+    <div class="container">
+            <br />
+            
+     <div class="alert alert-danger" role="alert"><strong>Following validation failures found in application. Please fix them and re-submit.</strong></div>
+
+     {% for validation in validation_failures %}
+         <div class="alert alert-warning" role="alert">{{ validation }}</div>     
+     {% endfor %}
+     
+    <br />     
+            
+    <form action="/instacart_shopper/">
+        <input type="submit" class="btn btn-large btn-danger" value="Back to application">
+    </form>    
+                
+    </div>
+
+
+{% endblock %}

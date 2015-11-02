@@ -1,0 +1,6 @@
+.project
+*.sqlite
+django_instacart/
+.pmd
+.pydevproject
+.settings

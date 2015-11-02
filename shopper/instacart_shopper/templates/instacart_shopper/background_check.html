@@ -1,0 +1,28 @@
+{% extends "instacart_shopper/base.html" %}
+{% block content %}
+<div class="container">
+   <div>
+        <h4>Terms and Conditions</h4>
+        <p>
+            <ul>
+			  <li>Instcart would carry a thorough background check to validate the submitted personal information.</li>
+			  <li>Instacart has the jurisdiction to cancel this contract, if the submitted personal information is incorrect.</li>
+			  <li>Instacart would not disclose this personal information to any third-party vendors.</li>
+            </ul>  
+        </p>
+   </div>
+   
+   <br />
+   
+<form class="form-horizontal" id="background_check_form" method="post" action="/instacart_shopper/confirmation/">
+{% csrf_token %}
+  <i class="icon-thumbs-up fa-2x"></i><input type="submit" class="btn btn-success btn-large" value="I accept the terms and conditions">
+</form>
+
+<form action="/instacart_shopper/">
+{% csrf_token %}
+    <i class="icon-thumbs-down fa-2x"></i><input type="submit" class="btn btn-large btn-danger" value="I don't accept the terms and conditions">
+</form> 
+</div>
+
+{% endblock %}
