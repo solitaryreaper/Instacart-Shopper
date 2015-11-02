@@ -1,6 +1,7 @@
 from .models import Applicant
 from .utils import *
 from django.db.models import Count
+import collections
 
 def check_if_valid_applicant(applicant):
     '''
@@ -27,7 +28,7 @@ def get_funnel_report(start_date, end_date):
     '''
         Generates the funnel report between the given date intervals
     '''
-    funnel_report = {}
+    funnel_report = collections.OrderedDict()
     date_ranges = get_date_ranges(start_date, end_date)
     for date_range in date_ranges:
         range_start = date_range.start_date
