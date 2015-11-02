@@ -33,8 +33,9 @@ This web application is also running use the default development server provided
 
 ## Scalability
 The following ideas can help in scaling the analytics component of this application under high load.
-1. Caching
-2. Date-based database partitioning
+  1. Caching
+
+  2. Date-based database partitioning
 
 ## Screenshots
 Screenshots for the various web application states and API's have been hosted here : 
