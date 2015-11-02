@@ -14,7 +14,7 @@ This web application is running against the default SQLITE database. But it can 
 
 This web application is also running use the default development server provided by Django. But it can be configured to use NGINX or other web servers to handle production workloads.
 
-## Web Pages/API's
+## Web Pages/API's/DB
 1. Landing Page : http://159.203.92.24:8000/instacart_shopper/
    * Returns proper validation messages if the input is invalid. For example, malformed email id or phone number.
    * Returns proper validation messages if the email or phone number is already present in the shopper database.
@@ -33,6 +33,9 @@ This web application is also running use the default development server provided
  
 4. Django Admin API : http://159.203.92.24:8000/admin/instacart_shopper/applicant/
     * Username : admin, Password : admin
+    * 
+5.  DB Schema : https://github.com/solitaryreaper/Instacart-Shopper/tree/master/shopper/instacart_shopper/migrations
+    * Auto-generated using Django database migrations.
 
 ## Scalability
 The following ideas can help in scaling the analytics component for faster response time, even when the data size explodes.
