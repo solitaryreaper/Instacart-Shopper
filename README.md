@@ -5,9 +5,12 @@ This challenge is broken into two parts. The first part is implementing the publ
 The application has been hosted here : http://159.203.92.24:8000/instacart_shopper/
 
 To run the application locally, clone this repository and run the following command at the root :
+
 `python shopper/manage.py runserver`
 
-This will start the Django developmnt server on port 8000. The application can then be accessed at the URL : http://localhost:8000/instacart_shopper/
+This will start the Django developmnt server on port 8000. The application can then be accessed at the URL :
+
+`http://localhost:8000/instacart_shopper/`
 
 ## Technologies
 1. Python
