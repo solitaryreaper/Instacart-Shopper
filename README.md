@@ -33,3 +33,6 @@ This web application is also running use the default development server provided
 
 ## Screenshots
 Screenshots for the various web application states and API's have been hosted here : 
+
+## Testing
+This application has been tested with Python 2.7.5 and Django 1.8.5
