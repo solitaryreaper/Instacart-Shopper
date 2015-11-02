@@ -16,6 +16,11 @@ This web application is also running use the default development server provided
 
 ## Web Pages/API's
 1. Landing Page : http://159.203.92.24:8000/instacart_shopper/
+   * Returns proper validation messages if the input is invalid. For example, malformed email id or phone number.
+   * Returns proper validation messages if the email or phone number is already present in the shopper database.
+   * Uses Django session support to manage email based sessions for currently logged user.
+   * Uses Django message support to communicate appropriate validation messages.
+
 2. Funnel Report API : http://159.203.92.24:8000/instacart_shopper/funnel.json?start_date=START&end_date=END
 
     * This generates funnel report between the last monday <= start_date and next sunday >= end_date. The results are sorted by 
