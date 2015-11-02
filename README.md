@@ -33,12 +33,12 @@ This web application is also running use the default development server provided
 
 ## Scalability
 The following ideas can help in scaling the analytics component for faster response time, even when the data size explodes.
-  1. Caching
+  1. **Caching**
     Since the funnel API is an expensive grouping API, we can cache the results of this API for faster response times. Django 
     has support for many caching mechanisms like Memcached etc. for the same. Depending on the staleness requirements of the 
     API, we can tune the cache eviction policy.
 
-  2. Date-based Indexing and database partitioning
+  2. **Date-based Indexing and database partitioning**
     We also want to optimize the time taken for running the date-range queries. This can be done by creating index on the date 
     column. Also, date-based paritioning of the database might help speed up the query , depending on the nature of executed        queries.
 
