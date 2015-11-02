@@ -42,3 +42,8 @@ Screenshots for the various web application states and API's have been hosted he
 
 ## Testing
 This application has been tested with Python 2.7.5 and Django 1.8.5
+
+## TODO
+1. Add support for configuration for different environments.
+2. Better UI design experience.
+3. Add test cases.
