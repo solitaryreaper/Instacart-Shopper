@@ -15,13 +15,13 @@ This web application is running against the default SQLITE database. But it can 
 This web application is also running use the default development server provided by Django. But it can be configured to use NGINX or other web servers to handle production workloads.
 
 ## Web Pages/API's/DB
-1. Landing Page : http://159.203.92.24:8000/instacart_shopper/
+1. **Landing Page** : http://159.203.92.24:8000/instacart_shopper/
    * Returns proper validation messages if the input is invalid. For example, malformed email id or phone number.
    * Returns proper validation messages if the email or phone number is already present in the shopper database.
    * Uses Django session support to manage email based sessions for currently logged user.
    * Uses Django message support to communicate appropriate validation messages.
 
-2. Funnel Report API : http://159.203.92.24:8000/instacart_shopper/funnel.json?start_date=START&end_date=END
+2. **Funnel Report API** : http://159.203.92.24:8000/instacart_shopper/funnel.json?start_date=START&end_date=END
     * This generates funnel report between the last monday <= start_date and next sunday >= end_date. The results are sorted by 
     chronological buckets to help easily visualize the correct date buckets.
     * Returns proper API error messages if the input is incorrect. For example, if date is incorrectly formatted or START date        is greater than END date. 
@@ -33,10 +33,10 @@ This web application is also running use the default development server provided
     * **SETUP** If we want to further stress test the funnel API, run the bootstrap API with a very big COUNT value. It has 
       already been bootstrapped with 20K entries at this point.
  
-4. Django Admin API : http://159.203.92.24:8000/admin/instacart_shopper/applicant/
+4. **Django Admin API** : http://159.203.92.24:8000/admin/instacart_shopper/applicant/
     * Username : admin, Password : admin
     * 
-5.  DB Schema : https://github.com/solitaryreaper/Instacart-Shopper/tree/master/shopper/instacart_shopper/migrations
+5.  **DB Schema** : https://github.com/solitaryreaper/Instacart-Shopper/tree/master/shopper/instacart_shopper/migrations
     * Auto-generated using Django database migrations.
 
 ## Scalability
