@@ -46,7 +46,7 @@ The following ideas can help in scaling the analytics component for faster respo
     column. Also, date-based paritioning of the database might help speed up the query , depending on the nature of executed        queries.
 
 ## Screenshots
-Screenshots for the various web application states and API's have been hosted here : 
+Screenshots for the various web application states and API's have been hosted here : https://github.com/solitaryreaper/Instacart-Shopper/tree/master/screenshots
 
 ## Testing
 This application has been tested with Python 2.7.5 and Django 1.8.5
