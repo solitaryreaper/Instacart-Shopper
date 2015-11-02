@@ -109,6 +109,7 @@ def register(request):
     applicant = Applicant(name=name, email=email, phone=phone, location=location)
     logger.info("Applicant : %s" % str(applicant))
     
+    # Using session variables to pass data across multiple web pages
     request.session['reg_name'] = name
     request.session['reg_email'] = email
     request.session['reg_phone'] = phone
@@ -171,5 +172,14 @@ def funnel_analytics(request):
         return HttpResponseServerError(error_message)
     
     return HttpResponse(json.dumps(funnel_report), content_type="application/json")
+
+
+def bootstrap_dummy_data(request, count):
+    '''
+        Bootstraps db with random shopper applicants.
+    '''
+    print("Running bootstrap job for %d entries", count)
+    bootstrap_message = bootstrap_db_with_data_for_funnel_report(int(count))
+    return HttpResponse(bootstrap_message)
 
         

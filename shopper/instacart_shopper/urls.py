@@ -11,5 +11,6 @@ urlpatterns = [
     url(r'^background_check/$', views.background_check, name='background_check'),
     url(r'^confirmation/$', views.application_confirmation, name='confirmation'),
     url(r'^update/$', views.update_application, name='update'),    
-    url(r'^edit/$', views.edit_application, name='edit')         
+    url(r'^edit/$', views.edit_application, name='edit'),
+    url(r'^bootstrap/(?P<count>.*)/$', views.bootstrap_dummy_data, name='bootstrap')         
 ]
