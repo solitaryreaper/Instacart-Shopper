@@ -10,6 +10,8 @@ The application has been hosted here : http://159.203.92.24:8000/instacart_shopp
 
 Used Django because it also provides an admin interface to manage the database data. Django or Ruby on rails are good MVC frameworks to use for such web-centric CRUD applications.
 
-## APIs
+## Web Pages/API's
+1. Landing Page : http://159.203.92.24:8000/instacart_shopper/
+2. Funnel Report API : http://159.203.92.24:8000/instacart_shopper/funnel.json?start_date=2014-01-01&end_date=2014-12-31
 
 
