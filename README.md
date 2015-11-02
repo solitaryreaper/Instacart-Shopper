@@ -15,6 +15,7 @@ This will start the Django developmnt server on port 8000. The application can t
 ## Technologies
 1. Python
 2. Django
+3. Sqlite
 
 Used Django because it also provides an admin interface to manage the database data. Django or Ruby on rails are good MVC frameworks to use for such web-centric CRUD applications.
 
