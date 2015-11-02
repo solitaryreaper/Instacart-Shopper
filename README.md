@@ -22,17 +22,13 @@ This web application is also running use the default development server provided
    * Uses Django message support to communicate appropriate validation messages.
 
 2. Funnel Report API : http://159.203.92.24:8000/instacart_shopper/funnel.json?start_date=START&end_date=END
-
     * This generates funnel report between the last monday <= start_date and next sunday >= end_date. The results are sorted by 
     chronological buckets to help easily visualize the correct date buckets.
     * Returns proper API error messages if the input is incorrect. For example, if date is incorrectly formatted or START date        is greater than END date. 
-
     * Example : http://159.203.92.24:8000/instacart_shopper/funnel.json?start_date=2014-01-01&end_date=2014-12-31
 
 3. Data bootstrap API : http://159.203.92.24:8000/instacart_shopper/bootstrap/COUNT/
- 
-    * This API populates the database with COUNT random dummy shopper applicants.
-   
+     * This API populates the database with COUNT random dummy shopper applicants.
     * Example : http://159.203.92.24:8000/instacart_shopper/bootstrap/10000/
 
 
