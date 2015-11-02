@@ -19,6 +19,7 @@ Used Django because it also provides an admin interface to manage the database d
     Example : http://159.203.92.24:8000/instacart_shopper/funnel.json?start_date=2014-01-01&end_date=2014-12-31
 
 3. Data bootstrap API : http://159.203.92.24:8000/instacart_shopper/bootstrap/<count>/
-   Example : http://159.203.92.24:8000/instacart_shopper/bootstrap/10000/
+   
+    Example : http://159.203.92.24:8000/instacart_shopper/bootstrap/10000/
 
 
