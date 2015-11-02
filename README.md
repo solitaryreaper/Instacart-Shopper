@@ -54,7 +54,8 @@ The following ideas can help in scaling the analytics component for faster respo
     Since the funnel API is an expensive grouping API, we can cache the results of this API for faster response times. Django 
     has support for many caching mechanisms like *Memcached*, *local memory caching* etc. for the same. Depending on the            business requirements of the API and the staleness threshold, we can tune the cache eviction policy.
   
-    In the current implementation, cache eviction has been set to **5 minutes** and caching policy uses **Local Memory Caching**     for caching. 
+    In the current implementation, cache eviction has been set to **5 minutes** and caching policy uses **Local Memory Caching**     for caching. The first funnel API call takes sometime and the subsequent calls in next 5 minute window are blazing fast, 
+    though stale.
 
     * If business is fine with seeing slightly stale grouped date for shoppers, then we can increase the cache eviction interval
     to get more cache hits and hence better API response times. But, if the requirement is to get most recent data, then this 
