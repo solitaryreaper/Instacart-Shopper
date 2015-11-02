@@ -30,6 +30,9 @@ This web application is also running use the default development server provided
 3. Data bootstrap API : http://159.203.92.24:8000/instacart_shopper/bootstrap/COUNT/
     * This API populates the database with COUNT random dummy shopper applicants.
     * Example : http://159.203.92.24:8000/instacart_shopper/bootstrap/10000/
+ 
+4. Django Admin API : http://159.203.92.24:8000/admin/instacart_shopper/applicant/
+    * Username : admin, Password : admin
 
 ## Scalability
 The following ideas can help in scaling the analytics component for faster response time, even when the data size explodes.
