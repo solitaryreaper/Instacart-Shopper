@@ -10,6 +10,10 @@ The application has been hosted here : http://159.203.92.24:8000/instacart_shopp
 
 Used Django because it also provides an admin interface to manage the database data. Django or Ruby on rails are good MVC frameworks to use for such web-centric CRUD applications.
 
+This web application is running against the default SQLITE database. But it can be configured to use any database in the backend because of Django's database abstraction layer.
+
+This web application is also running use the default development server provided by Django. But it can be configured to use NGINX or other web servers to handle production workloads.
+
 ## Web Pages/API's
 1. Landing Page : http://159.203.92.24:8000/instacart_shopper/
 2. Funnel Report API : http://159.203.92.24:8000/instacart_shopper/funnel.json?start_date=START&end_date=END
@@ -18,7 +22,9 @@ Used Django because it also provides an admin interface to manage the database d
     
     * Example : http://159.203.92.24:8000/instacart_shopper/funnel.json?start_date=2014-01-01&end_date=2014-12-31
 
-3. Data bootstrap API : http://159.203.92.24:8000/instacart_shopper/bootstrap/<count>/
+3. Data bootstrap API : http://159.203.92.24:8000/instacart_shopper/bootstrap/COUNT/
+ 
+    * This API populates the database with COUNT random dummy shopper applicants.
    
     * Example : http://159.203.92.24:8000/instacart_shopper/bootstrap/10000/
 
