@@ -108,6 +108,6 @@ def bootstrap_db_with_data_for_funnel_report(num_random_entries_to_generate):
         if not Applicant.objects.filter(email=email).exists() and not Applicant.objects.filter(phone=phone).exists():
             inserted_counter += 1
             applicant.save()
-            print("Inserted applicant id : %s", applicant)
+            print("Inserted applicant id : %s" % applicant)
             
     return "Inserted " + str(inserted_counter) + " random shopper applicants into DB"
