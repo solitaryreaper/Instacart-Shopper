@@ -32,7 +32,7 @@ This web application is also running use the default development server provided
     * Example : http://159.203.92.24:8000/instacart_shopper/bootstrap/10000/
 
 ## Scalability
-The following ideas can help in scaling the analytics component of this application under high load.
+The following ideas can help in scaling the analytics component for faster response time, even when the data size explodes.
   1. Caching
 
   2. Date-based database partitioning
