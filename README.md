@@ -51,8 +51,7 @@ The following ideas can help in scaling the analytics component for faster respo
     to get more cache hits and hence better API response times. But, if the requirement is to get most recent data, then this 
     interval has to be decreased further, leading to more cache misses.
     * If the number of entries to be cached is very high, then local-memory caching used for development purpose might not 
-    suffice because a lot of cache eviction might happen because of LRU policy. In such a case, using a distributed cache like
-    *Memcached* migth be a better fit.
+    suffice because a lot of cache eviction might happen because of LRU policy and limited memory size. In such a case, using a     distributed cache like *Memcached* might be a better fit.
 
   2. **Date-based Indexing and database partitioning**
     We also want to optimize the time taken for running the date-range queries. This can be done by creating index on the date 
