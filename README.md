@@ -28,7 +28,7 @@ This web application is also running use the default development server provided
     * Example : http://159.203.92.24:8000/instacart_shopper/funnel.json?start_date=2014-01-01&end_date=2014-12-31
 
 3. Data bootstrap API : http://159.203.92.24:8000/instacart_shopper/bootstrap/COUNT/
-     * This API populates the database with COUNT random dummy shopper applicants.
+    * This API populates the database with COUNT random dummy shopper applicants.
     * Example : http://159.203.92.24:8000/instacart_shopper/bootstrap/10000/
 
 
