@@ -4,3 +4,4 @@ django_instacart/
 .pmd
 .pydevproject
 .settings
+*.pyc
